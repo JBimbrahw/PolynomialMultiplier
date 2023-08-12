@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Polynomial Multiplier</title>
+</head>
+
+
+
+<body>
+    <h1>Polynomial Multiplier</h1>
+
+    <div>
+        <span>( </span> <span><input type="text" id="text1" style="width: 30px"></span>  <span> + </span> <input type="text" id="text2" style="width: 30px"></span> <span>)</span>
+        <span>( </span> <span><input type="text" id="text3" style="width: 30px"></span>  <span> + </span> <input type="text" id="text4" style="width: 30px"></span> <span>)</span>
+    </div>
+
+    <div>
+        <br/>
+        <button onclick="compute()">Answer</button>
+        <input type="text" id="text5">
+    </div>
+    
+
+    <script>
+        function compute() {
+          document.getElementById("text5").value =
+          document.getElementById("text1").value + document.getElementById("text3").value
+          + "+" +
+          document.getElementById("text1").value + document.getElementById("text4").value
+          + "+" +
+          document.getElementById("text2").value + document.getElementById("text3").value
+          + "+" +
+          document.getElementById("text2").value + document.getElementById("text4").value
+        }
+
+    </script>
+
+</body>
+</html>
